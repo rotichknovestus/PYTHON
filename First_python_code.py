@@ -8,12 +8,12 @@ import folium
 from opencage.geocoder import OpenCageGeocode
  
 # taking input the phonenumber along with the country code
-number = input("+254725271525: ")
+number = input("+254725271487: ")
 # Parsing the phonenumber string to convert it into phonenumber format
 phoneNumber = phonenumbers.parse(number)
  
 # Storing the API Key in the Key variable
-Key = "351881812785814" #generate your api https://opencagedata.com/api
+Key = "351881357862785814" #generate your api https://opencagedata.com/api
  
 # Using the geocoder module of phonenumbers to print the Location in console
 yourLocation = geocoder.description_for_number(phoneNumber,"en")
@@ -33,7 +33,7 @@ lat = results[0]['geometry']['lat']
 lng = results[0]['geometry']['lng']
  
 # Getting the map for the given latitude and longitude
-myMap = folium.Map(loction=[lat,lng],zoom_start = 9)
+myMap = folium.Map(loction=[lat,lng],zoom_start = 8)
  
 # Adding a Marker on the map to show the location name
 folium.Marker([lat,lng],popup=yourLocation).add_to(myMap)

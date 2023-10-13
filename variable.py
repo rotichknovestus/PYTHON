@@ -1,4 +1,4 @@
-age = 28
-name = "Novestus"
+age = 20
+name = "Novestus_Kipkorir"
 
 print("age")
