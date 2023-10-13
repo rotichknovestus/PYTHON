@@ -8,12 +8,12 @@ import folium
 from opencage.geocoder import OpenCageGeocode
  
 # taking input the phonenumber along with the country code
-number = input("+254725271502: ")
+number = input("+254725271525: ")
 # Parsing the phonenumber string to convert it into phonenumber format
 phoneNumber = phonenumbers.parse(number)
  
 # Storing the API Key in the Key variable
-Key = "351881812785812" #generate your api https://opencagedata.com/api
+Key = "351881812785814" #generate your api https://opencagedata.com/api
  
 # Using the geocoder module of phonenumbers to print the Location in console
 yourLocation = geocoder.description_for_number(phoneNumber,"en")
